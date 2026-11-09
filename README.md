@@ -6,6 +6,8 @@ The Patient Management System is a simple web-based application developed using 
 
 The main purpose of this project is to manage patient information easily. It allows users to add, view, update, and delete patient records using CRUD operations.
 
+https://chelurusandhya-bot.github.io/patientmanagementsystem/
+
 ## 2. Technologies Used
 
 - HTML – To create the webpage structure.
