@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Patient Management System</h1>
+
+        <h2>Add Patient Details</h2>
+
+        <form id="patientForm">
+            <input type="hidden" id="editIndex">
+
+            <input type="text" id="name"
+                   placeholder="Patient Name" required>
+
+            <input type="number" id="age"
+                   placeholder="Age" min="1" max="120" required>
+
+            <input type="text" id="gender"
+                   placeholder="Gender" required>
+
+            <input type="text" id="phone"
+                   placeholder="Phone Number"
+                   pattern="[0-9]{10}" required>
+
+            <input type="text" id="disease"
+                   placeholder="Disease" required>
+
+            <button type="submit" id="submitBtn">
+                Add Patient
+            </button>
+        </form>
+
+        <h2>Patient Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Phone</th>
+                    <th>Disease</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="patientList">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
